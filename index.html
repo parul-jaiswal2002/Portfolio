@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2d98b2752b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span>P</span>arul</h2>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#portfolio">More</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hii, I'm <span>Parul</span><br />
+            Jaiswal from Jaipur
+          </h1>
+          <p style="font-size: 14px">
+            A Full-Stack Web Developer , <br />writing clean and maintainable
+            code,with a focus on full-stack development
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/parul.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              Hii, I am Parul jaiswal from jaipur. I did my graduation in B.Sc.
+              in 2022. Because I am interested in coding so much , so I joined
+              10xacademy. And here in 6 month training I upskilled myself with
+              some programming languages.I made many projects based on HTML,
+              CSS,Javascript, Reactjs,nodejs etc. I am also a proactive learner,
+              always seeking opportunities to expand my knowledge and stay
+              updated with the latest industry trends.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web Interfacecs</li>
+                <li>
+                  <span>Web Development</span><br />
+                  (HTML,CSS5, Bootstrap, Javascript, Reactjs, nodejs, Expressjs,
+                  mongodb)
+                </li>
+                <li>
+                  <span>MERNSTACK developer</span><br />Building mernstack webs
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>MERN Trainee</span><br />
+                  at 10xAcademy for 6 months
+                </li>
+                <li><span>0 Experience</span><br />I am a Fresher</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2022-2023</span><br />Web Development at 10xAcademy
+                </li>
+                <li>
+                  <span>2019-2022</span><br />B.Sc. from Arya Institute Jaipur
+                  with 80%
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  Passed Intermediate exams with 92%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------services-------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>CAR-RENTAL-App</h2>
+            <p>
+              It is a full-stack web app, with login and signup
+              authentication.The tech stacks used in this are HTML,CSS,
+              Javascript,Reactjs,nodejs,Expressjs etc. For backend I used
+              Mongodb to store and fetch data.A user can book or edit his
+              carbooking after login.
+            </p>
+            <a
+              href="https://github.com/parul-jaiswal2002/Car-Rental-App-V1"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://car-rental-frontend-lq9g.onrender.com/"
+              target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>IDMB clone</h2>
+            <p>
+              It is movie app which is based on HTML, CSS, Reactjs, Javascript.
+              Here form TMDB api I am fetching all data and using them in a
+              structured way.
+            </p>
+            <a
+              href="https://github.com/parul-jaiswal2002/IDMB-Movie-App"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://idmb-movie-app.onrender.com/" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>E-COMMERCE-App</h2>
+            <p>
+              I created a E-commerce app using Reactjs which has cart
+              functionality. A user can choose any product and add to cart. I
+              Used context API to add cart functionality and some raw data to
+              fetch.
+            </p>
+            <a
+              href="https://github.com/parul-jaiswal2002/E-Commerce-website"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://e-commerce-website-chwt.onrender.com/" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Portfolio------------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Other Projects</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Online Food app</h3>
+              <p>
+                It is a simple HTML CSS Project. I just made UI for this.
+              </p>
+              <a href="https://github.com/parul-jaiswal2002/FOOD-APP"
+                ><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Image-Search-app</h3>
+              <p>
+                In this app I used Reactjs. Using useEffect and fetch api We can search  and see any image.
+              </p>
+              <a href="https://github.com/parul-jaiswal2002/Image-Search-App/tree/main"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Spotify clone</h3>
+              <p>
+                It is a Spotify clone. Here I used HTML, CSS and Javascript with previous and next functionality. we can play any music. 
+              </p>
+              <a href="https://github.com/parul-jaiswal2002/Spotify"
+                ><i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ------------------contact--------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i> &nbsp;
+              &nbsp;paruljansie@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i> &nbsp; &nbsp;9214376777
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/parul.jaiswal.92754397/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://github.com/parul-jaiswal2002" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/paruljansie23/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/parul-jaiswal-a10988251/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="images/Parul_V1.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Id"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
